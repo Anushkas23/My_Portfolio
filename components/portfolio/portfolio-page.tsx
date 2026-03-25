@@ -163,33 +163,25 @@ export function PortfolioPage() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative space-y-5 lg:pl-4">
             <div className="pointer-events-none absolute inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_top,rgba(110,231,214,0.28),transparent_55%),radial-gradient(circle_at_bottom_right,rgba(244,162,97,0.24),transparent_48%)] blur-3xl" />
 
             <TiltedCard
-              imageSrc="/anushka-portrait.jpeg"
-              altText="Portrait of Anushka Sahani"
+              imageSrc="/anushka-garden-portrait.jpeg"
+              altText="Garden portrait of Anushka Sahani"
               captionText="Anushka Sahani"
-              imageClassName="object-[center_18%]"
+              imageClassName="object-[center_38%]"
               priority
               overlay={
-                <div className="flex h-full flex-col justify-between p-5">
+                <div className="flex h-full p-5">
                   <Badge className="w-fit border-white/60 bg-white/88 text-slate-900 shadow-sm">
-                    Portfolio Portrait
+                    Featured portrait
                   </Badge>
-                  <div className="w-fit rounded-3xl border border-white/45 bg-slate-950/35 px-4 py-3 text-white backdrop-blur-sm">
-                    <p className="text-xs uppercase tracking-[0.26em] text-white/75">
-                      Available for
-                    </p>
-                    <p className="mt-1 text-base font-semibold">
-                      Internships & collaborations
-                    </p>
-                  </div>
                 </div>
               }
             />
 
-            <Card className="mt-5 border-white/80 bg-white/90 lg:absolute lg:-bottom-8 lg:left-6 lg:mt-0 lg:max-w-sm">
+            <Card className="border-white/80 bg-white/92 shadow-[0_26px_70px_-52px_rgba(15,23,42,0.45)] lg:ml-auto lg:max-w-sm">
               <CardHeader className="space-y-3">
                 <Badge variant="secondary" className="w-fit">
                   Current experience
