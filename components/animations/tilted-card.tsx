@@ -18,6 +18,7 @@ type TiltedCardProps = {
   altText: string;
   captionText?: string;
   className?: string;
+  imageClassName?: string;
   overlay?: ReactNode;
   priority?: boolean;
 };
@@ -33,6 +34,7 @@ export function TiltedCard({
   altText,
   captionText,
   className,
+  imageClassName,
   overlay,
   priority = false
 }: TiltedCardProps) {
@@ -108,7 +110,7 @@ export function TiltedCard({
             fill
             priority={priority}
             sizes="(min-width: 1024px) 440px, 92vw"
-            className="object-cover"
+            className={cn("object-cover", imageClassName)}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/18 via-transparent to-white/20" />
           {overlay ? <div className="absolute inset-0">{overlay}</div> : null}

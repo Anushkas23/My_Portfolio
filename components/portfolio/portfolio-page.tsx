@@ -167,10 +167,26 @@ export function PortfolioPage() {
             <div className="pointer-events-none absolute inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_top,rgba(110,231,214,0.28),transparent_55%),radial-gradient(circle_at_bottom_right,rgba(244,162,97,0.24),transparent_48%)] blur-3xl" />
 
             <TiltedCard
-              imageSrc="/profile-card.svg"
-              altText="Illustrated profile card for Anushka Sahani"
-              captionText="Frontend + ML / Cloud Security"
+              imageSrc="/anushka-portrait.jpeg"
+              altText="Portrait of Anushka Sahani"
+              captionText="Anushka Sahani"
+              imageClassName="object-[center_18%]"
               priority
+              overlay={
+                <div className="flex h-full flex-col justify-between p-5">
+                  <Badge className="w-fit border-white/60 bg-white/88 text-slate-900 shadow-sm">
+                    Portfolio Portrait
+                  </Badge>
+                  <div className="w-fit rounded-3xl border border-white/45 bg-slate-950/35 px-4 py-3 text-white backdrop-blur-sm">
+                    <p className="text-xs uppercase tracking-[0.26em] text-white/75">
+                      Available for
+                    </p>
+                    <p className="mt-1 text-base font-semibold">
+                      Internships & collaborations
+                    </p>
+                  </div>
+                </div>
+              }
             />
 
             <Card className="mt-5 border-white/80 bg-white/90 lg:absolute lg:-bottom-8 lg:left-6 lg:mt-0 lg:max-w-sm">
