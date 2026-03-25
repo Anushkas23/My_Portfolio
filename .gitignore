@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+dist
+.vercel
+*.log
+.codex-temp-react-bits
+.codex-temp-shadcn
+.git-broken-*
